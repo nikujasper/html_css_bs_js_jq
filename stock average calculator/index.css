@@ -1,0 +1,18 @@
+.navbar{
+    width: 90%;
+    /* border: 1px solid black; */
+    padding: 10px;
+}
+.n1d1, .n1d2, .n1d3{
+    display: inline;
+    /* border: 1px solid red; */
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+.n1d1:active{
+    color: green;
+    
+}

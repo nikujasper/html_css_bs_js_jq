@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script src="index.js"></script>
+    <style>
+        input[type="number"]::-webkit-inner-spin-button {
+            cursor: pointer;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+
+    <div style="color: green; font-size: large; width: 25%;">
+        Stock market average calculator
+        <hr style="color: aliceblue;">
+    </div>
+    <div style="display: flex;">
+        <div style="width: 25%;margin: 20px;padding: 20px;">
+            <form>
+                First Purchase <br>
+                <label for="">Units</label><br>
+                <input type="number" name="" id="unit1" placeholder="" onclick="fun1()">
+                <br>
+                <label for="">Price per share</label><br>
+                <input type="number" name="" id="price1" placeholder="" onclick="fun1()">
+                <hr>
+
+                <button type="button" onclick="fun1(); fun2();"> Calculate Average </button>
+                <button type="button">Clear Fields</button>
+            </form>
+        </div>
+        <div style=" width: 25%; margin: 20px; padding: 20px;">
+            <form action="">
+                Second Purchase<br>
+                <label for="">Units</label><br>
+                <input type="number" name="" id="unit2" placeholder="" onclick="fun1()">
+                <br>
+                <label for="">Price per share</label><br>
+                <input type="number" name="" id="price2" placeholder="" onclick="fun1()">
+                <hr>
+            </form>
+        </div>
+    </div>
+
+    <div>
+
+    </div>
+    <div style="padding: 10px; " id="hd" hidden>
+        <div style="padding: 10px;">Total Unit: <input type="text" id="tu" style="border: none;"> </div>
+        <div style="padding: 10px;">Average price: <input type="text" id="ap" style="border: none;"></div>
+        <div style="padding: 10px;">Total Amount: <input type="text" id="ta" style="border: none;"></div>
+    </div>
+
+
+</body>
+
+</html>
