@@ -1,0 +1,715 @@
+<html>
+
+<head>
+    <title>
+        Assignment-2
+    </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        #div1 {
+            background-color: #37abe7;
+            color: aliceblue;
+            padding: 20px;
+            margin: 30px;
+            height: 25px;
+        }
+
+        .div2,
+        .div3,
+        .div4 {
+            margin: 15px;
+            display: inline;
+            padding: 10px;
+        }
+
+        .container {
+            height: 50px;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 20px;
+        }
+
+        .div4 {
+            background-color: #37abe7;
+            border-radius: 30px;
+            color: white;
+            /* font-weight: bold; */
+        }
+
+        .rating1 {
+
+            /* display: flex; */
+            max-width: 20%;
+            height: 100px;
+            /* border: 1px solid black; */
+            /* justify-content: center; */
+            margin: auto;
+            margin-top: 5%;
+            color: white;
+            font-weight: 300;
+            align-content: center;
+            /* align-items: end; */
+            text-align: center;
+        }
+
+        .div5 {
+            background-image: url(flower1.png);
+            background-size: cover;
+            padding-top: 70px;
+            max-width: 95%;
+            margin: 0 auto;
+        }
+
+        .div6 {
+            align-items: center;
+            color: white;
+            text-align: center;
+            height: 150px;
+        }
+
+        .sp1 {
+            color: #37abe7;
+        }
+
+        .btn1 {
+            background-color: #37abe7;
+            color: white;
+            width: 300px;
+            height: 50px;
+            border-radius: 30px;
+            margin: 0 auto;
+            font-size: medium;
+            border: none;
+        }
+
+        .div7 {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            display: block;
+        }
+
+        .ratingspan {
+            font-size: smaller;
+        }
+
+        .sl1 {
+            background-color: rgb(13, 213, 213);
+            color: white;
+
+        }
+
+        select {
+            border: none;
+        }
+
+        .div8 {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        .div9 {
+            background-color: #37abe7;
+            padding: 1px;
+            margin: 10px 0;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .fas {
+            float: right;
+            background-color: white;
+        }
+
+        .div10 {
+            height: auto;
+            /* position: relative; */
+            justify-content: center;
+            /* align-items: center; */
+            display: flex;
+            margin: auto;
+            max-width: 80%;
+            background-image: url("background1.png");
+        }
+
+        .div11left,
+        .div11right {
+            /* margin: 40px; */
+            display: inline;
+            /* padding: 10px; */
+            height: auto;
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        .div11left {
+            margin-left: 50px;
+            margin-right: 30px;
+            margin-bottom: 50px;
+        }
+
+        .div11right {
+            margin-right: 50px;
+            margin-bottom: 50px;
+        }
+
+        .div12 {
+            padding: 100px;
+            background-image: url("background2.png");
+            max-width: 65%;
+            margin: 0 auto;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .div12_1 {
+            /* border: 1px solid black; */
+            background-image: url("logo2.png");
+            height: 80px;
+            background-repeat: no-repeat;
+            background-size: 155px 100px;
+            background-position: center;
+            margin-bottom: 20px;
+            background-size: auto;
+
+        }
+
+        .div13 {
+
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .sp2 {
+            font-family: cursive;
+            color: #37abe7;
+            font-size: medium;
+        }
+
+        .div14 {
+            padding: auto;
+            /* border: 1px solid black; */
+            margin: 0 auto;
+            max-width: 82%;
+            height: auto;
+            justify-content: center;
+            display: flex;
+            position: relative;
+
+        }
+
+        .div15 {
+            padding: auto;
+            display: inline;
+            margin: 15px;
+            box-shadow: 0 0 8px #bababa;
+        }
+
+        .div16,
+        .div17,
+        .div18 {
+            display: block;
+            background-size: cover;
+            padding: 100px;
+            background-repeat: no-repeat;
+
+
+
+        }
+
+
+        .div16 {
+            background-image: url("box1.png");
+        }
+
+        .div17 {
+            background-image: url("box2.png");
+        }
+
+        .div18 {
+            background-image: url("box3.png");
+        }
+
+        .div19 {
+            text-align: center;
+            /* margin: 20px; */
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+
+        .story {
+
+            padding: auto;
+
+        }
+
+        .btn2 {
+            background-color: #37abe7;
+            border-radius: 25px;
+            width: 150px;
+            height: 45px;
+            color: white;
+            font-style: bold;
+            border: none;
+        }
+
+        .sp3 {
+
+            color: white;
+            font-weight: bold;
+        }
+
+        .foot {
+            /* border: 1px solid green; */
+            height: 300px;
+            display: flex;
+            max-width: 87%;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+
+        }
+
+
+        .foot11 {
+
+            background-repeat: no-repeat;
+            padding-top: 0;
+            /* align-items: center; */
+            padding-bottom: 20px;
+            justify-content: center;
+            display: flex;
+            background-color: #194d69;
+
+        }
+
+        .foot1,
+        .foot2 {
+            background-color: #194d69;
+            height: 300px;
+            width: 50%;
+
+            /* display: inline; */
+
+        }
+
+        .foot1 {
+            box-shadow: 10px 0px 0px 0px #13374b;
+            margin-right: 3px;
+        }
+
+        .foot2 {
+            color: white;
+            align-items: center;
+            /* display: flex; */
+
+            /* justify-content: center; */
+        }
+
+        .foot1img {
+            width: 200px;
+            height: 100px;
+
+        }
+
+        .footlogo1,
+        .footlogo3 {
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+
+        }
+
+        .footlogo2 {
+            width: 100px;
+            height: 80px;
+        }
+
+        .foot13 {
+            /* align-items: center; */
+            justify-content: center;
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .foot12 {
+            color: white;
+            justify-content: center;
+            display: flex;
+            margin: auto;
+            font-size: small;
+        }
+
+        .foot21 {
+            margin-top: 10%;
+
+
+        }
+
+        .foot22,
+        .foot21 {
+
+            /* border: 1px solid red; */
+            height: 40%;
+            width: 60%;
+            margin-left: 40px;
+
+
+        }
+
+        .copyright {
+            background-color: #37abe7;
+            color: white;
+            text-align: center;
+            margin: auto;
+            height: 40px;
+            /* border: 1px solid black; */
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            max-width: 87%;
+
+        }
+
+        .div11lower {
+            color: black;
+            background-color: nones;
+            padding: 5%;
+        }
+
+        .div11upper {
+            width: 415px;
+            height: 50px;
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 35px;
+            padding-bottom: 20px;
+            background-color: #37abe7;
+            display: flex;
+            /* color: white; */
+            /* text-align: center; */
+            /* justify-content: center; */
+
+
+
+
+
+        }
+
+
+
+
+        .upperright {
+            color: white;
+            width: 200px;
+            height: 40px;
+            margin-left: 10px;
+            display: inline;
+            /* border: 1px solid black; */
+
+        }
+
+        .upperleft {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: url("man.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            z-index: 1;
+            display: inline;
+
+        }
+
+        .sp4 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: X-large;
+            color: #37abe7;
+
+
+
+        }
+
+        .div10text {
+            color: white;
+            text-align: center;
+            margin: auto;
+            position: absolute;
+            margin: 30px;
+
+            /* display: flex; */
+
+        }
+
+
+
+        .foot22logo {}
+    </style>
+</head>
+
+<body>
+    <div id="div1">
+        Call Now <b>561-676-3393</b> | Lynn@TherepySpace.com
+    </div>
+    <div class="container">
+
+
+        <div class="div2">
+            <img src="Capture.JPG" alt="lotus-image">
+        </div>
+        <div class="div2">
+            Specilities<select></select>
+        </div>
+        <div class="div2">
+            Approaches<select></select>
+        </div>
+        <div class="div2">
+            About<select></select>
+        </div>
+        <div class="div2">
+            Online Threapy
+        </div>
+        <div class="div3">
+            Blog
+        </div>
+        <div class="div3">
+            Contact
+        </div>
+        <div class="div4">
+            SCHEDULE A 15MIN CALL
+
+        </div>
+
+
+    </div>
+    <div class="div5">
+        <div class="div6">
+            <h1>A Space of <span class="sp1">Healing</span> and <span class="sp1">Transformation</span> </h1>
+            <h3>Great location to loose your stress</h3>
+        </div>
+        <div class="div7">
+            <button class="btn1">SCHEDULE FREE 15MIN CALL</button>
+        </div>
+        <div class="rating1">
+            <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+            <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+            <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+            <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+            <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+            4.7/5 RATING<br><br><span class="ratingspan">(BASED ON GOOGLE REVIEW)</span>
+
+        </div>
+    </div>
+    <div class="div8">
+        <div class="div9">
+            <h3 class="head1"> Read about my Background & Story<i class="fa-solid fa-sort-up"
+                    style="color: #ffffff; float: right;"></i></h3>
+        </div>
+        <div class="story">
+            Suspendisse magna nibh, molestie vitae interdum commodo, eleifend ac justo. In hac habitasse platea
+            dictumst. Praesent
+            semper, libero sed accumsan consectetur, orci nisl consectetur nisi, a auctor erat magna a justo. Cras eu
+            ullamcorper
+            nisl. Duis vulputate rutrum purus sit amet faucibus. Integer ornare eros id massa tempor tempor. Nulla metus
+            tortor,
+            tincidunt at pulvinar ac, sollicitudin id dui. Donec sed ipsum eu massa pellentesque ullamcorper a eget
+            lacus. Sed
+            suscipit adipiscing ornare. Nam rhoncus nibh in purus feugiat pulvinar.<br>
+            Aenean mi erat, malesuada ut pharetra id, egestas a lectus. Vivamus et diam mi. Morbi orci leo, mollis id
+            consequat nec,
+            consequat a magna. Fusce viverra leo non erat posuere a ullamcorper velit rhoncus. Pellentesque consectetur
+            tincidunt
+            venenatis. Mauris lacinia aliquet sem sed consectetur. Sed dui urna, semper ut pharetra ultricies, vehicula
+            nec massa.
+            Sed sed augue velit. Nullam sit amet arcu vel urna convallis lobortis. Etiam a odio felis. Phasellus augue
+            urna, lacinia
+            eget rutrum vitae, euismod nec odio.<br>
+            Etiam quis est magna, ut tempus erat. Mauris lacinia mollis malesuada. Nam malesuada, lectus non
+            sollicitudin eleifend,
+            sem leo iaculis lorem, nec sodales mi nulla eu enim. Pellentesque bibendum pretium bibendum. Fusce tortor
+            leo, elementum
+            ut sagittis eu, facilisis ac magna. Morbi sed arcu nisl, ac aliquet nibh. Proin placerat, diam ultrices
+            molestie
+            ullamcorper, massa turpis aliquet libero, in vehicula lacus ante vehicula augue. Integer molestie posuere
+            tortor eget
+            feugiat. Duis a dolor vulputate risus commodo gravida ornare a orci. Praesent elit mi, tempus quis convallis
+            vel,
+            placerat non libero.
+
+        </div>
+        <div class="div9">
+            <h3 class="head1">Read about my Services<i class="fa-solid fa-sort-down"
+                    style="color: #ffffff ;float: right; "></i></h3>
+        </div>
+        <div class="div9">
+            <h3 class="head1">Read about my Philosophy & Approach<i class="fa-solid fa-sort-down"
+                    style="color: #ffffff;float: right;"></i></h3>
+        </div>
+
+    </div>
+
+    <div class="div10">
+        <div class="div10text"><span class="sp4">Our Happy Patient</span>
+            <h3 style="line-height: 0;">Testimonials<h3>
+        </div>
+        <div class="div11left">
+            <div class="div11upper">
+
+                <div class="upperleft">
+
+
+                </div>
+                <div class="upperright">
+                    John Doe<br>
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;<br>
+
+                    April 6, 2019 via Google
+                </div>
+            </div>
+
+            <div class="div11lower">
+                “Aenean mi erat, malesuada ut pharetra id, egestas a lectus. Vivamus et diam mi. Morbi orci leo, mollis
+                id consequat
+                nec, consequat a magna. Fusce viverra leo non erat posuere a ullamcorper velit rhoncus. Pellentesque
+                consectetur
+                tincidunt venenatis. Mauris lacinia aliquet sem sed consectetur. Sed dui urna, semper ut pharetra
+                ultricies”
+            </div>
+
+        </div>
+
+
+        <div class="div11right">
+
+            <div class="div11upper">
+
+                <div class="upperleft">
+
+                </div>
+                <div class="upperright">
+                    John Doe<br>
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;
+                    <i class="fa-solid fa-star" style="color: #ffd500;"></i>&nbsp;<br>
+
+                    April 6, 2019 via Google
+                </div>
+            </div>
+
+            <div class="div11lower">
+                “Aenean mi erat, malesuada ut pharetra id, egestas a lectus. Vivamus et diam mi. Morbi orci leo, mollis
+                id consequat
+                nec, consequat a magna. Fusce viverra leo non erat posuere a ullamcorper velit rhoncus. Pellentesque
+                consectetur
+                tincidunt venenatis. Mauris lacinia aliquet sem sed consectetur. Sed dui urna, semper ut pharetra
+                ultricies”
+            </div>
+
+        </div>
+    </div>
+    <div class="div12">
+        <div class="div12_1"></div>
+        <div class="div12_2">Suspendisse magna nibh, molestie vitae interdum commodo</div>
+
+    </div>
+    <div class="div13">
+        <span class="sp2">What we Provide</span><br>
+
+        Our Services
+
+    </div>
+
+
+    <div class="div14">
+        <div class="div15">
+            <div class="div16"></div>
+            <div class="div19">
+                <h3 class="div19h">INDIVIDUAL COUNCELLING</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque era’t vel rutrum.
+                Duis sem enim,
+                tempor sed gravida imperdiet.<br><br>
+                <button class="btn2">Read More>></button><br><br>
+            </div>
+        </div>
+        <div class="div15">
+            <div class="div17"></div>
+            <div class="div19">
+                <h3 class="div19h">ANXITY TREATMENT</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque era’t vel rutrum.
+                Duis sem enim,
+                tempor sed gravida imperdiet.<br><br>
+                <button class="btn2">Read More>></button><br><br>
+            </div>
+        </div>
+        <div class="div15">
+            <div class="div18"></div>
+            <div class="div19">
+                <h3 class="div19h">DEPRESSION TREATMENT</h3>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare scelerisque era’t vel rutrum.
+                Duis sem enim,
+                tempor sed gravida imperdiet.<br><br>
+                <button class="btn2">Read More>></button><br><br>
+            </div>
+        </div>
+    </div>
+
+    <div>
+
+
+    </div>
+
+    <div class="foot">
+        <div class="foot1">
+            <div class="foot11"><img class="foot1img" src="logo3.png"></div>
+            <div class="foot12">
+                SPECILITIES | APPROACHES | ABOUT | ONLINE THERAPY | BLOG | CONTACT
+            </div>
+            <div class="foot13">
+                <img class="footlogo1" src="logo4.png">
+                <img class="footlogo2" src="logo5.png">
+                <img class="footlogo3" src="logo6.png">
+            </div>
+
+
+        </div>
+        <div class="foot2">
+            <div class="foot21">
+                CONTACT US<br><br>
+                <i class="fa fa-phone" aria-hidden="true">&nbsp;</i>561-676-3393<br>
+                <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;Lynn@TherepySpace.com<br>
+                <i class="fa fa-map-marker" aria-hidden="true">&nbsp;</i>205 NE 5th Terrace Delray Beach FL 33444
+            </div>
+            <div class="foot22">
+                <img class="foot22logo" src="logo7.png">
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="copyright">
+        Copyright &nbsp;<i class="fa-regular fa-copyright" style="color: #ffffff;"></i>&nbsp; 2019 The Therapy Space |
+        ALL RIGHT RESERVED | TERMS & CONDITIONS | PRIVACY POLICY
+
+    </div>
+
+</body>
+
+</html>
