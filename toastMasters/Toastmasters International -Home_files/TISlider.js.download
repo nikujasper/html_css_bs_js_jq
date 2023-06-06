@@ -1,0 +1,36 @@
+﻿$(document).ready(function () {
+	$('#myCarousel').carousel({
+		pause: "false",
+		keyboard: true
+	});
+
+	var winWidth = $(window).innerWidth();
+	$(window).resize(function () {
+		if ($(window).innerWidth() < winWidth) {
+			$('.carousel-inner>.item>img').css({
+				'min-width': winWidth, 'width': winWidth
+			});
+		}
+		else {
+			winWidth = $(window).innerWidth();
+			$('.carousel-inner>.item>img').css({
+				'min-width': '', 'width': ''
+			});
+		}
+	});
+
+	$('#myCarousel').carousel('pause');
+});
+
+function startCarousel() {
+	$('#myCarousel').carousel('cycle');
+}
+
+jQuery(document).bind('keyup', function (e) {
+	if (e.keyCode == 39) {
+		jQuery('a.carousel-control.right').trigger('click');
+	}
+	else if (e.keyCode == 37) {
+		jQuery('a.carousel-control.left').trigger('click');
+	}
+});

@@ -1,0 +1,50 @@
+﻿var serviceWorkerIsAvailable = function() {
+    const isServiceWorkerEnabled = document.getElementById("enableServiceWorker").getAttribute("data-value") === "true";
+    return "serviceWorker" in navigator && isServiceWorkerEnabled;
+}
+
+var storageEstimationIsAvailable = function () {
+    return "storage" in navigator && "estimate" in navigator.storage;
+}
+
+var getPushNotificationSupportStatus = function() {
+    return ("serviceWorker" in navigator && "PushManager" in window) ? "supported" : "unsupported";
+}
+
+var getServiceWorkerStatus = function() {
+    if ("serviceWorker" in navigator) {
+        return navigator.serviceWorker.controller ? "controlled" : "supported";
+    } else {
+        return "unsupported";
+    }
+}
+
+if (serviceWorkerIsAvailable) {
+    if (navigator.hasOwnProperty('serviceWorker')) {
+        window.addEventListener("load", function () {
+            navigator.serviceWorker.register("/sw.js");
+        });
+    }
+}
+
+trackEvent(GA_CATEGORIES.PWA, "Service Worker Status", getServiceWorkerStatus());
+trackEvent(GA_CATEGORIES.PWA, "Push Notification Support Status", getPushNotificationSupportStatus());
+
+if (storageEstimationIsAvailable) {
+    if (navigator.hasOwnProperty('storage')) {
+        navigator.storage.estimate().then(function (estimate) {
+            const usage = estimate.usage;
+            const quota = estimate.quota;
+            const percentUsed = Math.round(usage / quota * 100);
+            trackEvent(GA_CATEGORIES.PWA, "Storage Estimate", "Percent Used", percentUsed);
+        });
+    }
+}
+
+window.addEventListener("beforeinstallprompt", function(e) {
+    e.userChoice.then(
+        function (choiceResult) {
+            trackEvent(GA_CATEGORIES.PWA, "Add to Homescreen", choiceResult.outcome);
+        }
+    );
+});
